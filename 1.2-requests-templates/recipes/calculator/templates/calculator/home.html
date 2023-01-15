@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все рецепты</title>
+</head>
+<body>
+    <h1> Все рецепты </h1>
+    <ul style="color: red; font-size: 20px">
+    {% for rec in all_menu %}
+        <li>
+            <a href="http://127.0.0.1:8000/{{ rec }}">{{ rec }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+    {{ num }}
+</body>
+</html>
